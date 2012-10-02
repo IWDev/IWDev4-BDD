@@ -1,5 +1,6 @@
 IWDev4-BDD
 ==========
+Presentation slides, notes and Gherkin & C# code examples - presented at #IWDev 4 (02/10/2012) - by Matt Ball.
 
 Development Dependencies
 ------------------------
