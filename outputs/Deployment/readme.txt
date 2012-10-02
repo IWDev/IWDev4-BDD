@@ -1,0 +1,1 @@
+Folder designated for solution deployment/package when scripted.

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    
+  <CodeSnippet Format="1.0.0">
+      <Header>
+          <Title>Gherkin</Title>
+          <Shortcut>bdd2</Shortcut>
+      </Header>
+      <Snippet>
+          <Code Language="CSharp">
+              <![CDATA[
+      [Then(@"the Cat will be killed")]
+      public void ThenTheCatWillBeKilled()
+      {
+          ScenarioContext.Current.Pending();
+      }
+              ]]>
+          </Code>
+      </Snippet>        
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Gherkin</Title>
+      <Shortcut>bdd1</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp"><![CDATA[        [Given(@"I am lined up with the Cat")]]]></Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Gherkin</Title>
+      <Shortcut>bdd3</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp"><![CDATA[        [When(@"the Acid blob collides with the Cat")]]]></Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Gherkin</Title>
+      <Shortcut>bdd4</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp"><![CDATA[            Assert.Greater(this.GameWorld.CatKillCount, 0);]]></Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Gherkin</Title>
+      <Shortcut>bdd5</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[
+        /// <summary>
+        /// Gets the number of times that the Alien has killed the Cat.
+        /// </summary>
+        public Int32 CatKillCount { get; private set; }
+        ]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Gherkin</Title>
+      <Shortcut>bdd6</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[
+            // Handle acid-cat collision detection
+            if (this._AcidRectangle.Intersects(this._CatRectangle))
+            {
+                this._AcidRectangle.X = -2000;
+                this._CatRectangle.Y = -this._CatRectangle.Height;
+                this.CatKillCount++;
+            }w
+        ]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+</CodeSnippets>

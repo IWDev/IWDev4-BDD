@@ -1,0 +1,1 @@
+Folder designated for solution build when build is scripted.
